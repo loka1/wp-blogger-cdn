@@ -77,15 +77,15 @@ body {
 }
 
 .action .like {
-  background: url("like.png") no-repeat left center;
+  background: url("https://cdn.jsdelivr.net/gh/loka1/wp-blogger-cdn@1.0.2/index_files/like.png") no-repeat left center;
 }
 
 .action .bubble {
-  background: url("bubble.png") no-repeat left center;
+  background: url("https://cdn.jsdelivr.net/gh/loka1/wp-blogger-cdn@1.0.2/index_files/bubble.png") no-repeat left center;
 }
 
 .action .share-btn {
-  background: url("share.png") no-repeat left center;
+  background: url("https://cdn.jsdelivr.net/gh/loka1/wp-blogger-cdn@1.0.2/index_files/share.png") no-repeat left center;
 }
 
 .tot-likes {
